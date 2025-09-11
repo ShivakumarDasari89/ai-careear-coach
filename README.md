@@ -1,6 +1,11 @@
 🧑‍💼 AI Career Coach
 
+
+This project is currently **under active development**.  
+I’m building it step by step, and new features will be added soon. Stay tuned for updates! 🎉
+
 An AI-powered full-stack career coaching platform built with Next.js 15, React 19, Gemini AI, Prisma, Clerk, and TailwindCSS. The platform helps users with mock interviews, resume building, career insights, and personalized job preparation — all in a sleek, modern UI.
+**** still 
 
 🚀 Features
 
