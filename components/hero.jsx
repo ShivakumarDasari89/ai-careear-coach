@@ -7,22 +7,29 @@ import { useRef,useEffect } from 'react'
 function HeroSection() {
     const  imageRef =useRef(null);
 
-    useEffect(() => {
-        const imageElement = imageRef.current;
-        const handleScroll = () => {
-        const scrollPosition = window.scrollY;
-        const scrollThreshold = 50; // Adjust this value as needed
-        if(scrollPosition > scrollThreshold )  {
-            imageElement.classList.add('scrolled');
-        }
-    }
+ useEffect(() =>  {
+    const imageElement = imageRef.current
+    if (!imageElement) return
 
-    window.addEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            imageElement.classList.add('scrolled')
+          } else {
+            imageElement.classList.remove('scrolled')
+          }
+        })
+      },
+      { threshold: 0.3 } // adjust how much needs to be visible (0.3 = 30%)
+    )
+
+    observer.observe(imageElement)
+
     return () => {
-        window.removeEventListener('scroll', handleScroll);
+      if (imageElement) observer.unobserve(imageElement)
     }
-
-},[]);
+  }, [])
 
 
 

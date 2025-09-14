@@ -1,12 +1,11 @@
 🧑‍💼 AI Career Coach
 
 
-This project is currently **under active development**.  
+This project is currently **under active development**.
 I’m building it step by step, and new features will be added soon. Stay tuned for updates! 🎉
 
 An AI-powered full-stack career coaching platform built with Next.js 15, React 19, Gemini AI, Prisma, Clerk, and TailwindCSS. The platform helps users with mock interviews, resume building, career insights, and personalized job preparation — all in a sleek, modern UI.
-**** still 
-
+**** still
 🚀 Features
 
 🔐 Authentication – Secure login/signup powered by Clerk.
@@ -63,25 +62,25 @@ NeonDB / PostgreSQL setup
 Installation
 # Clone the  MY repo
 # Navigate into the project
-cd ai-career-coach  
+cd ai-career-coach
 
 # Install dependencies
-npm install  
+npm install
 
 # Setup environment variables
-cp .env.example .env.local  
+cp .env.example .env.local
 
 # Run the dev server
-npm run dev  
+npm run dev
 
 Environment Variables
 
 Create a .env.local file with:
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key  
-CLERK_SECRET_KEY=your_clerk_secret  
-DATABASE_URL=your_neondb_url  
-GEMINI_API_KEY=your_gemini_key  
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+CLERK_SECRET_KEY=your_clerk_secret
+DATABASE_URL=your_neondb_url
+GEMINI_API_KEY=your_gemini_key
 
 📚 Project Structure
 /app
