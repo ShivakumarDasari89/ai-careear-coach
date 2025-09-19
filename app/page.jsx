@@ -6,6 +6,9 @@ import { testimonial } from "@/data/testimonial";
 import Image from "next/image";
 import { faqs } from "@/data/faqs";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 export default function Home() {
   return (
     <div >
@@ -139,6 +142,24 @@ export default function Home() {
     </div>
   </div>
 </section>
+
+
+
+<section className="w-full ">
+  <div className=" mx-auto py-24 gradient rounded-lg px-4 ">
+    <div className="flex flex-col items-center justify-center space-y-4 max-w-3xl mx-auto text-center">
+    <h2 className="text-3xl foun-bold tracking-tighter text-primary-foreground sm:text-4xl md:text-5xl">Ready to Accelaerate your Career</h2>
+    <p className="mx-auto max-w-[600px] text-primary-foreground text-opacity-80 md:text-xl ">Join thousands of professionals who are their careers with AI-powered guidnace.</p>
+    <Link href='/dashboard' passHref>
+      <Button size="lg" variant='secondary' className="h-l1 mt-5 animate-bounce">Start Your Journet Today 
+        <ArrowRight className="ml-2 h-4 w-4"/>
+      </Button>
+    </Link>
+    </div>
+  </div>
+</section>
+
+
 </div>
 );
 }
